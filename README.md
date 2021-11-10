@@ -18,7 +18,7 @@ localhost:4000
               /person/with-childs (get) listar a las personas con sus hijos listados
               
               /child (POST) crear hijo
-              /child (DELETE) eliminar hijo
+              /child/:id (DELETE) eliminar hijo
               
           estructura del body JSON para post y put
           
