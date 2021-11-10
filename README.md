@@ -5,7 +5,9 @@ al iniciar por primera vez el server se crearan las tablas de persona e hijo res
 
 endpoints:
 
-localhost:4000/person (GET): lista las personas con su cantidad de hijos
+localhost:4000
+
+              /person (GET): lista las personas con su cantidad de hijos
 
               /person (POST): para crear una persona
               
