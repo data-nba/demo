@@ -1,5 +1,5 @@
 # demo
-se debe crear con el nombre demo_evaluar_db (modificar el archivo 'key.js' en la raiz para cambiar la configuracion de la base de datos si asi lo desea)
+se debe crear antes de correr el server una base de datos con el nombre demo_evaluar_db (modificar el archivo 'key.js' en la raiz para cambiar la configuracion de la base de datos si asi lo desea)
 
 al iniciar por primera vez el server se crearan las tablas de persona e hijo respectivamente
 
