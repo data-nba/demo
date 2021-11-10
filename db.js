@@ -3,6 +3,7 @@ const {database} = require('./keys');
 const {sqlPerson} = require('./models/Person')
 const {sqlChild} = require('./models/Child')
 const {promisify} = require("util")
+const bcrypt = require("bcrypt")
 const pool = mysql.createPool(database)
 
 function createTable(sql)

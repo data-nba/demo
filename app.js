@@ -3,13 +3,12 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
-
-var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
+const bcrypt = require("bcrypt")
+const {user, pass} = require("./config")
 var personsRouter = require('./routes/persons')
-
-var childsRouter = require('./routes/child')
-
+var childsRouter = require('./routes/child');
+var authRouter = require('./routes/auth')
+const { ppid } = require('process');
 var app = express();
 
 // view engine setup
@@ -26,6 +25,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 //enrutadores person y child
 app.use('/person', personsRouter);
 app.use('/child', childsRouter);
+app.use('/auth', authRouter)
 
 
 // catch 404 and forward to error handler
